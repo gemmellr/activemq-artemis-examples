@@ -56,4 +56,4 @@ rm -f pom.xml.bak
 
 # Update root pom version and all the child modules to match
 echo "Updating root pom version and child modules"
-mvn versions:set -DgroupId="org.apache.activemq.examples.*" -DgenerateBackupPoms=false -DprocessAllModules=true -DnewVersion="${NEW_VERSION}" -DprocessFromLocalAggregationRoot=false
+mvn -U versions:set -DgroupId="org.apache.activemq.examples.*" -DgenerateBackupPoms=false -DprocessAllModules=true -DnewVersion="${NEW_VERSION}" -DprocessFromLocalAggregationRoot=false
