@@ -55,7 +55,30 @@ under the License.
             <enabled>false</enabled>
          </releases>
       </repository>
+      <repository>
+         <id>staging-activemq</id>
+         <url>https://repository.apache.org/content/repositories/orgapacheactivemq-1399</url>
+         <releases>
+            <enabled>true</enabled>
+         </releases>
+         <snapshots>
+            <enabled>false</enabled>
+         </snapshots>
+      </repository>
    </repositories>
+
+   <pluginRepositories>
+      <pluginRepository>
+         <id>staging-activemq-plugins</id>
+         <url>https://repository.apache.org/content/repositories/orgapacheactivemq-1399</url>
+         <releases>
+            <enabled>true</enabled>
+         </releases>
+         <snapshots>
+            <enabled>false</enabled>
+         </snapshots>
+      </pluginRepository>
+   </pluginRepositories>
 
    <build>
       <pluginManagement>
